@@ -1,0 +1,41 @@
+# Created by .ignore support plugin (hsz.mobi)
+**/.idea
+**/.idea/workspace.xml
+**/.vscode
+
+# Dependency directories
+node_modules/
+
+**/dist
+
+#**/package-lock.json
+backend/src/docs/swagger.json
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file
+.env
+
+# Optional npm cache directory
+.npm
+
+# TypeScript v1 declaration files
+typings/
+
+.DS_Store
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# nyc test coverage
+.nyc_output
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+#build files
+build/
