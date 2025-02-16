@@ -1,19 +1,19 @@
-#componente de autenticación 
+#componente de venta de maiz
 components:
   securitySchemes:
-    bearerAuth:            # arbitrary name for the security scheme
+    bearerAuth:
       type: http
       scheme: bearer
 #Login usuarios
-/api/auth/login:
+/api/corn/buy:
   post:
     tags:
       - Auth
     security: []
     produces:
       - application/json
-    description: Login
-    summary: Autenticar usuario
+    description: Venta de maíz
+    summary: Venta de maíz
     requestBody:
       content:
         'application/json':

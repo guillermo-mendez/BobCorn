@@ -57,10 +57,10 @@ const CornPurchase: React.FC = () => {
         toast({
           variant: "destructive",
           title: "Error",
-          description: "Error al comprar maíz"
+          description: error.response?.data?.message || "Error al comprar maíz"
         })
       }
-
+      setIsLoading(false);
     }
   }
 

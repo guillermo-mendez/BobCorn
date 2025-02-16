@@ -7,8 +7,7 @@ import helmet from 'helmet';
 import i18n from 'i18n';
 import {config} from 'dotenv';
 import swaggerUI from 'swagger-ui-express';
-import {errorHandlerMiddleware} from 'error-handler-express-ts';
- import swaggerSpec from './docs/configuration';
+ import swaggerSpec from '../docs/configuration';
 import {rateLimiter} from './middlewares/rateLimiter'
 import routers from './routers-version';
 import {getConnectionTest} from "./config/database";
@@ -100,7 +99,6 @@ class ServerSettings {
     app.set('port', port);
     app.use('/', routers);
     console.log(`✔ rutas cargadas...`);
-    app.use(errorHandlerMiddleware);
     httpServer.listen(port, () => {
       console.log(`Servidor Corriendo en http://localhost:${port}`);
       console.log(`Documentación swagger corriendo en http://localhost:${port}/swagger-api-docs/`);

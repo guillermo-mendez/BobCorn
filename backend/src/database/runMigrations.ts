@@ -3,7 +3,8 @@ import path from 'path';
 import {pool} from "../config/database";
 
 const migrations = [
-  { name: '001_initial_migration', path: path.join(__dirname, './migrations/001_initial_migration.ts') }
+  { name: '001_initial_migration', path: path.join(__dirname, './migrations/001_initial_migration.ts') },
+  { name: '002_insert_initial_clients', path: path.join(__dirname, './migrations/002_insert_initial_clients.ts') }
 ];
 
 

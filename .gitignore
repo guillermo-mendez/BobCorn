@@ -9,7 +9,7 @@ node_modules/
 **/dist
 
 #**/package-lock.json
-backend/src/docs/swagger.json
+backend/docs/swagger.json
 
 # Optional eslint cache
 .eslintcache
