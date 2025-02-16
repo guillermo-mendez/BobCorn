@@ -26,6 +26,9 @@ Para ejecutar las migraciones
 ### `npm run dev`
 Para ejecutar el servidor en modo desarrollo
 
+### `npm run build-doc`
+Para generar la documentación de la API con swagger
+
 ## Rutas de la aplicación
 /POST /api/corn/buy
 Body

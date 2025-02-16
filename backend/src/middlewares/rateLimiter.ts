@@ -2,6 +2,11 @@ import { Request, Response, NextFunction } from 'express';
 import buyRepository from "../lib/repositories/buyRepository";
 
 export const rateLimiter = async (req: Request, res: Response, next: NextFunction):Promise<any> => {
+
+  if (req.path.startsWith('/swagger-api-docs')) {
+    return next();
+  }
+
   const {clientCode} = req.body;
 
   if (!clientCode) {
