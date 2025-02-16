@@ -30,7 +30,7 @@ class ServerSettings {
 
   private corsOrigin() {
     const corsOptions = {
-      origin: ['http://localhost:5173',],
+      origin: '*',
       methods: ['GET', 'HEAD', 'PUT', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
       optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 200
     };
